@@ -32,3 +32,10 @@
   list-style: none;
   padding: 0 1.5rem;
 }
+
+
+@media (max-width: 59rem) {
+  .Backdrop {
+    padding: 0 2rem;
+  }
+}

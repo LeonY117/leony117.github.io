@@ -9,13 +9,13 @@ const Navbar = () => {
   const router = useRouter();
   const logoclickedhandler = () => {
     // // reroute to home page:
-    // router.push('/');
+    router.push('/');
   };
   return (
     <div className={classes.Backdrop}>
       <div className={classes.Navbar}>
         <div className={classes.LogoWrapper}>
-          <Logo clicked={logoclickedhandler()} />
+          <Logo clicked={logoclickedhandler} />
         </div>
         <div className={classes.NavItems}>
           <ul className={classes.NavLinks}>

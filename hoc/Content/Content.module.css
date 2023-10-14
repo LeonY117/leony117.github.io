@@ -1,22 +1,11 @@
 .Content {
   max-width: 55rem;
-  margin: 5rem auto 0 auto;
+  margin: 0 auto;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 59rem) {
   .Content {
-    width: 90%;
-  }
-}
-
-@media (max-width: 768px) {
-  .Content {
-    width: 90%;
-  }
-}
-
-@media (max-width: 600px) {
-  .Content {
-    width: 90%;
+    padding: 0 2rem;
+    margin: 0 0;
   }
 }
