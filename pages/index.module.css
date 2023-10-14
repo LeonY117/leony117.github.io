@@ -1,0 +1,24 @@
+.MainBody {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 0;
+}
+
+.MainText {
+  flex: 60%;
+  padding: 0;
+  padding-right: 2rem;
+}
+
+.MainText > p {
+  margin: 0 0 1rem 0;
+}
+
+.MainImage {
+  flex: 40;
+  width: 100%;
+  max-width: 100%;
+  height: 25rem;
+  position: relative;
+  overflow: hidden;
+}
