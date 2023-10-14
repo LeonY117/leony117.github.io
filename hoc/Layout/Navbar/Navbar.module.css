@@ -1,0 +1,34 @@
+.Backdrop {
+  background-color: white;
+  border-bottom: 1px solid #f2f4f7;
+  width: 100%;
+}
+
+.Navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  width: 55rem;
+  max-width: 100%;
+  margin: auto;
+}
+
+.LogoWrapper {
+  font-size: 1.3rem;
+}
+
+.NavLinks {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding: 0;
+}
+
+.NavLink {
+  font-size: 0.9rem;
+  display: inline-block;
+  list-style: none;
+  padding: 0 1.5rem;
+}

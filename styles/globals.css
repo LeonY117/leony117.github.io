@@ -1,0 +1,50 @@
+:root {
+  --default: #5a5a5a;
+  --blue: #3366ff;
+  --blue-shade: #3f66db;
+  --blue-highlight: #577ff6;
+  --orange: #ffa800;
+  --orange-shade: #ff9900;
+  --orange-highlight: #f8ba1b;
+  --red: #ff4d00;
+  --red-shade: #e94b07;
+  --red-highlight: #fc512c;
+  --grey: #7c7c7c;
+  --grey-shade: #595959;
+  --grey-highlight: #8c8c8c;
+  --grey-light: #d4d4d4;
+  --black: #0b0b0b;
+  --black-shade: #000000;
+  --purple: #7f56d9;
+  --purple-shade: #784cdb;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+p,
+li {
+  font-size: 0.9rem;
+  line-height: 1.5em;
+  color: var(--default);
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
