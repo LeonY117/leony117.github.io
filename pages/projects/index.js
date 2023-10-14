@@ -6,7 +6,7 @@ import Content from '@/hoc/Content/Content';
 import Layout from '@/hoc/Layout/Layout';
 import EmoLink from '@/components/EmoLink/EmoLink';
 
-import classes from './projects.module.css';
+import classes from './Projects.module.css';
 
 const Projects = () => {
   const router = useRouter();
@@ -56,10 +56,13 @@ const Projects = () => {
                 </EmoLink>
               </li>
               <li>
-                <a>
+                <EmoLink
+                  emoji='🤖'
+                  clicked={() => projectClickedHandler('namo')}
+                >
                   Efficient Bayesian Neural Networks for Outdoor Semantic Scene
                   Understanding Tasks in Robotics
-                </a>
+                </EmoLink>
               </li>
             </ul>
           </div>

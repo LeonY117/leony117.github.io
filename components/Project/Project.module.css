@@ -1,0 +1,44 @@
+.Title {
+  margin: 1rem 0;
+}
+
+.Tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.Tag {
+  list-style: none;
+  margin: 0rem 0.5rem 0rem 0;
+  padding: 0.5rem 0;
+  font-size: 0.8rem;
+}
+
+.MetaData {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+.MainBody {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  gap: 2rem;
+}
+
+.ImageWrapper {
+  flex: 50%;
+  width: 100%;
+  max-width: 100%;
+  height: 30rem;
+  position: relative;
+  /* margin: 0 1rem; */
+}
+
+.TextWrapper {
+  flex: 50%;
+  /* margin: 0 1rem; */
+}
