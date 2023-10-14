@@ -1,0 +1,23 @@
+.LinkWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Emoji {
+  margin: 0;
+  margin-right: 0.5rem;
+  padding: 0;
+}
+
+.EmoLink {
+  text-decoration: underline;
+  color: black;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.EmoLink:hover {
+  color: var(--blue);
+}
