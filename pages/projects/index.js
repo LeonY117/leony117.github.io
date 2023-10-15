@@ -6,7 +6,7 @@ import Content from '@/hoc/Content/Content';
 import Layout from '@/hoc/Layout/Layout';
 import EmoLink from '@/components/EmoLink/EmoLink';
 
-import classes from './Projects.module.css';
+import classes from './projects.module.css';
 
 const Projects = () => {
   const router = useRouter();
