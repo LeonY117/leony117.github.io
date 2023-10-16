@@ -1,5 +1,10 @@
 .Links {
   text-align: center;
+  margin-top: 0.25rem;
+}
+
+.Links p {
+  margin: 0;
 }
 
 .Links a:hover {

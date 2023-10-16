@@ -49,5 +49,15 @@
 }
 
 .Links {
+}
 
+@media (max-width: 40rem) {
+  .Project {
+    max-width: 30rem;
+    margin: 0 auto;
+  }
+  .MainBody {
+    flex-direction: column;
+    gap: 0;
+  }
 }

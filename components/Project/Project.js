@@ -72,7 +72,7 @@ const Project = (props) => {
   );
 
   return (
-    <div>
+    <div className={classes.Project}>
       <h2 className={classes.Title}>{title}</h2>
       {tagsList ? <ul className={classes.Tags}>{tagsList}</ul> : null}
       {metaData}
