@@ -10,7 +10,7 @@
   justify-content: space-between;
   align-items: center;
   height: 3rem;
-  width: 55rem;
+  width: 50rem;
   max-width: 100%;
   margin: auto;
 }
@@ -34,7 +34,7 @@
 }
 
 
-@media (max-width: 59rem) {
+@media (max-width: 54rem) {
   .Backdrop {
     padding: 0 2rem;
   }

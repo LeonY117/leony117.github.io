@@ -1,9 +1,9 @@
 .Content {
-  max-width: 55rem;
+  max-width: 50rem;
   margin: 0 auto;
 }
 
-@media (max-width: 59rem) {
+@media (max-width: 54rem) {
   .Content {
     padding: 0 2rem;
     margin: 0 0;
