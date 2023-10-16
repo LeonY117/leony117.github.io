@@ -22,9 +22,9 @@ const Navbar = () => {
             <li className={classes.NavLink}>
               <Link href='/projects'>ML Projects</Link>
             </li>
-            <li className={classes.NavLink}>
+            {/* <li className={classes.NavLink}>
               <Link href='/'>Others</Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

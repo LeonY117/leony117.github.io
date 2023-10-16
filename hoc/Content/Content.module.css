@@ -1,11 +1,13 @@
 .Content {
-  max-width: 50rem;
+  max-width: 54rem;
+  padding: 0 2rem;
   margin: 0 auto;
 }
 
 @media (max-width: 54rem) {
   .Content {
-    padding: 0 2rem;
-    margin: 0 0;
+    /* box-sizing: content-box ; */
+    /* padding: 0 2rem; */
+    margin: 0 auto;
   }
 }
