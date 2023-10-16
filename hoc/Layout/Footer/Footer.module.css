@@ -13,10 +13,11 @@
   max-width: 100%;
   margin: auto;
   padding: 1rem 0;
+  gap: 2rem;
 }
 
 .TextWrapper {
-  flex: 50%;
+  flex: 60%;
 }
 
 .TextWrapper > p {
@@ -26,13 +27,14 @@
 }
 
 .FooterItems {
-  flex: 50%;
+  flex: 40%;
 }
 
 .Links {
   display: flex;
   flex-direction: column;
   margin: 0;
+  padding: 0;
 }
 
 .Link {
