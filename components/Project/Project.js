@@ -4,6 +4,21 @@ import Tag from '@/components/UI/Tag/Tag';
 
 import classes from './Project.module.css';
 
+const tag_colors = {
+  'reinforcement learning': '#FFDBFB',
+  'computer vision': '#DBF2FF',
+  'bayesian deep learning': '#DBFFE5',
+  'efficient networks': '#FDEAB8',
+  'language model': '#FFDBDB',
+  'multi-task learning': '#DBDCFF',
+  'autonomous navigation': '#FFFBDB',
+  'scene understanding': '#D8E7FF',
+  'object detection': '#DFF8CF',
+  'industry project': '#FFDBDB',
+  'physics simulation': '#DBF2FF',
+  'emotion detection': '#DBFFE5',
+};
+
 const Project = (props) => {
   // get title, content, and image url from props:
   const title = props.title; //string
@@ -18,9 +33,15 @@ const Project = (props) => {
   let tagsList = null;
   if (tags) {
     tagsList = tags.map((tag) => {
+      let color = '#F5F5F5';
+      if (tag.toLowerCase() in tag_colors) {
+        color = tag_colors[tag.toLowerCase()];
+      }
       return (
         <li className={classes.Tag}>
-          <Tag key={tag}>{tag}</Tag>
+          <Tag key={tag} color={color}>
+            {tag}
+          </Tag>
         </li>
       );
     });
