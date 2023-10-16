@@ -1,19 +1,18 @@
 .Intro a {
-    color: var(--blue);
-    cursor: pointer;
-  }
-  
-  .Intro a:hover {
-    color: var(--blue-highlight);
-  }
-  
-  .Projects {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .Projects li {
-    list-style: none;
-    margin: 0.25rem 0;
-  }
-  
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.Intro a:hover {
+  color: var(--blue-highlight);
+}
+
+.Projects {
+  margin: 0;
+  padding: 0;
+}
+
+.Projects li {
+  list-style: none;
+  margin: 0.25rem 0;
+}
