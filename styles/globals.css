@@ -35,6 +35,15 @@ li {
   font-weight: 400;
 }
 
+p > a {
+  color: var(--blue);
+  cursor: pointer;
+}
+
+p > a:hover {
+  color: var(--blue-highlight);
+}
+
 a {
   color: inherit;
   text-decoration: none;
