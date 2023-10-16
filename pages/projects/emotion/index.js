@@ -51,9 +51,13 @@ const Index = () => {
   const links = (
     <div className={classes.Links}>
       <p>
-        <Link href='' target='_blank'>
+        <a
+          href='/pdfs/NLP_project.pdf'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           Report
-        </Link>{' '}
+        </a>{' '}
         |{' '}
         <Link
           href='https://github.com/LeonY117/EmotionAnalysis'

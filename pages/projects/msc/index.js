@@ -55,7 +55,11 @@ const Index = () => {
   const links = (
     <div className={classes.Links}>
       <p>
-        <Link href='' target='_blank'>
+        <Link
+          href='/pdfs/MSc_Thesis_LeonYao.pdf'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           Thesis
         </Link>{' '}
         |{' '}
