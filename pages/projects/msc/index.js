@@ -12,6 +12,7 @@ const Index = () => {
     'Efficient Bayesian Neural Networks for Outdoor Semantic Scene Understanding Tasks in Robotics';
 
   const tags = [
+    'computer vision',
     'bayesian deep learning',
     'scene understanding',
     'efficient networks',

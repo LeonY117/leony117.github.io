@@ -11,7 +11,11 @@ const Index = () => {
   const title =
     'ShorelineNet: An Efficient Deep Learning Approach for Shoreline Semantic Segmentation for Unmanned Surface Vehicles';
 
-  const tags = ['semantic segmentation', 'efficient networks'];
+  const tags = [
+    'computer vision',
+    'semantic segmentation',
+    'efficient networks',
+  ];
 
   // TODO: store date in proper date format & parse it into text
   const date = 'Nov 2020 - Mar 2021';
