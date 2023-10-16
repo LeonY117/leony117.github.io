@@ -3,6 +3,7 @@ import React from 'react';
 import Project from '@/components/Project/Project';
 import Layout from '@/hoc/Layout/Layout';
 import Content from '@/hoc/Content/Content';
+import Link from 'next/link';
 
 import classes from '../ProjectPage.module.css';
 
@@ -20,21 +21,54 @@ const Index = () => {
   const date = 'Mar 2021 - Sept 2021';
   const location = 'UCL RPL Lab';
 
-  const imgURL = '/images/projects/namo.png';
+  const imgSrc = '/images/projects/namo.jpg';
   const imgAlt = 'Custom neural network architecture and screenshot demos';
 
   const mainText = (
     <>
       <p>
-        <b>Problem</b>: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Curabitur ut malesuada neque, vitae consequat enim.
+        <b>Problem</b>: The Navigation Among Movable Obstacle (NAMO) problem,
+        where agents can move objects in its environments to reach otherwise
+        unreachable positions.
       </p>
       <p>
-        <b>Technical Detail</b>: Aliquam vel sodales neque, gravida ornare enim.
-        Suspendisse dapibus mattis mi. Vestibulum vehicula pulvinar velit, at
-        sodales nibh convallis vel. Nam id volutpat nulla.
+        <b>Methodology</b>: We reframed the NAMO problem into a reinforcement
+        learning problem, and used a multimodal deep neural network for function
+        approximation.
+      </p>
+      <p>
+        <b>Technical Detail</b>: The network was implemented and trained with
+        PyTorch, and NVIDIA Isaac Gym was used for physics simulation. Custom
+        environments were built to generate random NAMO scenes.
+      </p>
+      <p>
+        <b>Results</b>: The final policy is able to understand the relationships
+        between the object, the room configuration, and its goal. It generalises
+        to unseen rooms and object positions, and we tested the network on a
+        quadrupedal robot.
       </p>
     </>
+  );
+
+  const links = (
+    <div className={classes.Links}>
+      <p>
+        <Link href='https://arxiv.org/pdf/2303.02407.pdf' target='_blank'>
+          Paper
+        </Link>{' '}
+        |{' '}
+        <Link
+          href='https://github.com/RPL-CS-UCL/namo_experiment'
+          target='_blank'
+        >
+          GitHub Repo
+        </Link>{' '}
+        |{' '}
+        <Link href='https://youtu.be/CRjkxNuPxCc' target='_blank'>
+          Video
+        </Link>
+      </p>
+    </div>
   );
 
   return (
@@ -45,9 +79,10 @@ const Index = () => {
           tags={tags}
           date={date}
           location={location}
-          imgURL={imgURL}
+          imgSrc={imgSrc}
           imgAlt={imgAlt}
           mainText={mainText}
+          links={links}
         />
       </Content>
     </Layout>

@@ -17,24 +17,33 @@ const Index = () => {
           <main>
             <div className={classes.MainBody}>
               <div className={classes.MainText}>
+                <p>Hi there 👋!</p>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Curabitur ut malesuada neque, vitae consequat enim. Sed
-                  vulputate arcu ut ante egestas, nec pretium justo molestie.
-                  Aliquam vel sodales neque, gravida ornare enim.
+                  My name is Leon, a machine learning engineer and a full-time
+                  butler to my cat 🐱.
                 </p>
                 <p>
-                  Pellentesque habitant morbi tristique senectus et netus et
-                  malesuada fames ac turpis egestas. Donec malesuada orci ac
-                  dignissim sagittis.Suspendisse dapibus mattis mi. Vestibulum
-                  vehicula pulvinar velit, at sodales nibh convallis vel. Nam id
-                  volutpat nulla.
+                  🎓 I graduated from UCL with a masters in Machine Learning and
+                  bachelors in Mechanical Engineering. I’ve done a lot work on
+                  with deep learning and{' '}
+                  <a href='/projects/msc'>computer vision tasks</a> for{' '}
+                  <a href='/projects/namo'>interesting robotics problems</a>.
                 </p>
                 <p>
-                  Nulla lacus enim, vehicula eget mi a, condimentum posuere est.
-                  Quisque rutrum id ex sed dapibus. Morbi sodales orci non dui
-                  pharetra, eget scelerisque tellus cursus. Cras sit amet velit
-                  ultrices, blandit diam sit amet, malesuada sem.
+                  🎨 I was also the cofounder of Test and Tutor, a data-centric
+                  platform for IB maths students to study. And in a past life, I
+                  was a part-time graphics designer and web developer.
+                </p>
+                <p>
+                  📝 I{' '}
+                  <a href='https://github.com/LeonY117/leony117.github.io'>
+                    built this website
+                  </a>{' '}
+                  to serve as a collection of TL;DRs for my ML projects and
+                  creative projects. It’s to showcase my project to those who
+                  want more than the one-liners on my CV but don’t want to read
+                  an entire paper. It’s also just a small corner of the internet
+                  where my archived projects live on.
                 </p>
               </div>
               <div className={classes.MainImage}>
