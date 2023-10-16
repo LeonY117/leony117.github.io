@@ -1,7 +1,12 @@
+import React from 'react';
 import Head from 'next/head';
 import Content from '../hoc/Content/Content';
 import Layout from '../hoc/Layout/Layout';
 import Image from 'next/image';
+import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGraduationCap, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 import classes from './index.module.css';
 
@@ -46,13 +51,45 @@ const Index = () => {
                   where my archived projects live on.
                 </p>
               </div>
-              <div className={classes.MainImage}>
-                <Image
-                  src='/images/profile_pic.jpg'
-                  alt='picture of me'
-                  layout='fill'
-                  objectFit='cover'
-                />
+              <div className={classes.ImageLinkWrapper}>
+                <div className={classes.MainImage}>
+                  <Image
+                    src='/images/profile_pic.jpg'
+                    alt='picture of me'
+                    layout='fill'
+                    objectFit='cover'
+                  />
+                </div>
+                <ul className={classes.Links}>
+                  <li>
+                    <Link href='' className={classes.SocialMediaLink}>
+                      <span className={classes.LinkWrapper}>
+                        <FontAwesomeIcon icon={faLinkedin} />
+                      </span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href='' className={classes.SocialMediaLink}>
+                      <span className={classes.LinkWrapper}>
+                        <FontAwesomeIcon icon={faGithub} />
+                      </span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href='' className={classes.SocialMediaLink}>
+                      <span className={classes.LinkWrapper}>
+                        <FontAwesomeIcon icon={faGraduationCap} />
+                      </span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href='' className={classes.SocialMediaLink}>
+                      <span className={classes.LinkWrapper}>
+                        <FontAwesomeIcon icon={faEnvelope} />
+                      </span>
+                    </Link>
+                  </li>
+                </ul>
               </div>
             </div>
           </main>

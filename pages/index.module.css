@@ -14,11 +14,39 @@
   margin: 0 0 1rem 0;
 }
 
-.MainImage {
+.ImageLinkWrapper {
   flex: 40;
+  display: flex;
+  flex-direction: column;
+}
+
+.MainImage {
   width: 100%;
   max-width: 100%;
   height: 25rem;
   position: relative;
   overflow: hidden;
+}
+
+.Links {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+.Links li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.LinkWrapper {
+  font-size: 1.2rem;
+}
+
+.SocialMediaLink {
+  cursor: pointer;
 }
