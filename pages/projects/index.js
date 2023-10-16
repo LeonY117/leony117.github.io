@@ -30,7 +30,7 @@ const Projects = () => {
       </PLink>
       . But I have been most interested in vision models, in particular{' '}
       <PLink link='bsc'>efficient scene segmentation</PLink> and{' '}
-      <PLink link='waste-detection'>object detection</PLink>. Currently I'm
+      <PLink link='waste'>object detection</PLink>. Currently I'm
       working on something between the intersection between{' '}
       <PLink link='msc'>vision and bayesian inference</PLink>.
     </p>
