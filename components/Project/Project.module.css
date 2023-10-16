@@ -29,11 +29,16 @@
   gap: 2rem;
 }
 
-.ImageWrapper {
+.ImageLinkWrapper {
   flex: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ImageWrapper {
   width: 100%;
   max-width: 100%;
-  height: 30rem;
+  height: 20rem;
   position: relative;
   /* margin: 0 1rem; */
 }
@@ -41,4 +46,8 @@
 .TextWrapper {
   flex: 50%;
   /* margin: 0 1rem; */
+}
+
+.Links {
+
 }

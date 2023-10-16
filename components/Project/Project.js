@@ -11,8 +11,8 @@ const Project = (props) => {
   const date = props.date; //string
   const location = props.location; //string
   const mainText = props.mainText; //<div> element
-  const urlText = props.urlText; // <div> element
-  const imgURL = props.imgURL; //string
+  const links = props.links; // <div> element
+  const imgSrc = props.imgSrc; //string
   const imgAlt = props.imgAlt; //string
 
   let tagsList = null;
@@ -40,8 +40,11 @@ const Project = (props) => {
 
   let mainBody = (
     <div className={classes.MainBody}>
-      <div className={classes.ImageWrapper}>
-        <Image src={imgURL} alt={imgAlt} layout='fill' objectFit='contain' />
+      <div className={classes.ImageLinkWrapper}>
+        <div className={classes.ImageWrapper}>
+          <Image src={imgSrc} alt={imgAlt} layout='fill' objectFit='contain' />
+        </div>
+        <div className={classes.Links}>{links}</div>
       </div>
       <div className={classes.TextWrapper}>{mainText}</div>
     </div>
