@@ -17,6 +17,7 @@ const Index = () => {
         <Link
           href='https://www.linkedin.com/in/linghong-yao/'
           className={classes.SocialMediaLink}
+          target='_blank'
         >
           <span className={classes.LinkWrapper}>
             <FontAwesomeIcon icon={faLinkedin} />
@@ -27,6 +28,7 @@ const Index = () => {
         <Link
           href='https://github.com/LeonY117'
           className={classes.SocialMediaLink}
+          target='_blank'
         >
           <span className={classes.LinkWrapper}>
             <FontAwesomeIcon icon={faGithub} />
@@ -37,6 +39,7 @@ const Index = () => {
         <Link
           href='https://scholar.google.com/citations?user=9HJ1g0gAAAAJ&hl=en'
           className={classes.SocialMediaLink}
+          target='_blank'
         >
           <span className={classes.LinkWrapper}>
             <FontAwesomeIcon icon={faGraduationCap} />
@@ -47,6 +50,7 @@ const Index = () => {
         <Link
           href='mailto:leon.yao117@gmail.com'
           className={classes.SocialMediaLink}
+          target='_blank'
         >
           <span className={classes.LinkWrapper}>
             <FontAwesomeIcon icon={faEnvelope} />

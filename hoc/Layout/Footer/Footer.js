@@ -28,6 +28,7 @@ const Footer = () => {
               <Link
                 href='https://www.linkedin.com/in/linghong-yao/'
                 className={classes.SocialMediaLink}
+                target='_blank'
               >
                 <p className={classes.LinkText}>Leon Yao</p>
               </Link>
@@ -41,6 +42,7 @@ const Footer = () => {
               <Link
                 href='https://github.com/LeonY117'
                 className={classes.SocialMediaLink}
+                target='_blank'
               >
                 <p className={classes.LinkText}>LeonY117</p>
               </Link>
@@ -54,6 +56,7 @@ const Footer = () => {
               <Link
                 href='https://scholar.google.com/citations?user=9HJ1g0gAAAAJ&hl=en'
                 className={classes.SocialMediaLink}
+                target='_blank'
               >
                 <p className={classes.LinkText}>Linghong Yao</p>
               </Link>
