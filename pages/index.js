@@ -11,6 +11,38 @@ import { faGraduationCap, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import classes from './index.module.css';
 
 const Index = () => {
+  const links = (
+    <>
+      <li>
+        <Link href='' className={classes.SocialMediaLink}>
+          <span className={classes.LinkWrapper}>
+            <FontAwesomeIcon icon={faLinkedin} />
+          </span>
+        </Link>
+      </li>
+      <li>
+        <Link href='' className={classes.SocialMediaLink}>
+          <span className={classes.LinkWrapper}>
+            <FontAwesomeIcon icon={faGithub} />
+          </span>
+        </Link>
+      </li>
+      <li>
+        <Link href='' className={classes.SocialMediaLink}>
+          <span className={classes.LinkWrapper}>
+            <FontAwesomeIcon icon={faGraduationCap} />
+          </span>
+        </Link>
+      </li>
+      <li>
+        <Link href='' className={classes.SocialMediaLink}>
+          <span className={classes.LinkWrapper}>
+            <FontAwesomeIcon icon={faEnvelope} />
+          </span>
+        </Link>
+      </li>
+    </>
+  );
   return (
     <>
       <Head>
@@ -54,43 +86,15 @@ const Index = () => {
               <div className={classes.ImageLinkWrapper}>
                 <div className={classes.MainImage}>
                   <Image
-                    src='/images/profile_pic.jpg'
+                    src='/images/profile_pic_zoomed.jpg'
                     alt='picture of me'
                     layout='fill'
                     objectFit='cover'
                   />
                 </div>
-                <ul className={classes.Links}>
-                  <li>
-                    <Link href='' className={classes.SocialMediaLink}>
-                      <span className={classes.LinkWrapper}>
-                        <FontAwesomeIcon icon={faLinkedin} />
-                      </span>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href='' className={classes.SocialMediaLink}>
-                      <span className={classes.LinkWrapper}>
-                        <FontAwesomeIcon icon={faGithub} />
-                      </span>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href='' className={classes.SocialMediaLink}>
-                      <span className={classes.LinkWrapper}>
-                        <FontAwesomeIcon icon={faGraduationCap} />
-                      </span>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href='' className={classes.SocialMediaLink}>
-                      <span className={classes.LinkWrapper}>
-                        <FontAwesomeIcon icon={faEnvelope} />
-                      </span>
-                    </Link>
-                  </li>
-                </ul>
+                <ul className={classes.Links}>{links}</ul>
               </div>
+              <div className={classes.MobileLinks}>{links}</div>
             </div>
           </main>
         </Content>
