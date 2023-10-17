@@ -14,28 +14,40 @@ const Index = () => {
   const links = (
     <>
       <li>
-        <Link href='' className={classes.SocialMediaLink}>
+        <Link
+          href='https://www.linkedin.com/in/linghong-yao/'
+          className={classes.SocialMediaLink}
+        >
           <span className={classes.LinkWrapper}>
             <FontAwesomeIcon icon={faLinkedin} />
           </span>
         </Link>
       </li>
       <li>
-        <Link href='' className={classes.SocialMediaLink}>
+        <Link
+          href='https://github.com/LeonY117'
+          className={classes.SocialMediaLink}
+        >
           <span className={classes.LinkWrapper}>
             <FontAwesomeIcon icon={faGithub} />
           </span>
         </Link>
       </li>
       <li>
-        <Link href='' className={classes.SocialMediaLink}>
+        <Link
+          href='https://scholar.google.com/citations?user=9HJ1g0gAAAAJ&hl=en'
+          className={classes.SocialMediaLink}
+        >
           <span className={classes.LinkWrapper}>
             <FontAwesomeIcon icon={faGraduationCap} />
           </span>
         </Link>
       </li>
       <li>
-        <Link href='' className={classes.SocialMediaLink}>
+        <Link
+          href='mailto:leon.yao117@gmail.com'
+          className={classes.SocialMediaLink}
+        >
           <span className={classes.LinkWrapper}>
             <FontAwesomeIcon icon={faEnvelope} />
           </span>
