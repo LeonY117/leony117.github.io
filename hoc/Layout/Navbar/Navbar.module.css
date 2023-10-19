@@ -31,5 +31,9 @@
   font-size: 0.9rem;
   display: inline-block;
   list-style: none;
-  padding: 0 1.5rem;
+  margin: 0 1.5rem;
+}
+
+.NavLink:hover {
+  color: var(--default-shade);
 }

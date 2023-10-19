@@ -52,6 +52,10 @@
   cursor: pointer;
 }
 
+.LinkWrapper:hover {
+  color: var(--default-shade);
+}
+
 .MobileLinks {
   display: none;
 }
