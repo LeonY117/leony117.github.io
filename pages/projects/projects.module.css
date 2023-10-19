@@ -4,7 +4,7 @@
 }
 
 .Intro a:hover {
-  color: var(--blue-highlight);
+  color: var(--blue-shade);
 }
 
 .Projects {
