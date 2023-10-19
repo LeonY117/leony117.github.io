@@ -4,6 +4,7 @@ import Project from '@/components/Project/Project';
 import Layout from '@/hoc/Layout/Layout';
 import Content from '@/hoc/Content/Content';
 import Link from 'next/link';
+import Head from 'next/head';
 
 import classes from '../ProjectPage.module.css';
 
@@ -51,20 +52,25 @@ const Index = () => {
   const links = null;
 
   return (
-    <Layout>
-      <Content>
-        <Project
-          title={title}
-          tags={tags}
-          date={date}
-          location={location}
-          imgSrc={imgSrc}
-          imgAlt={imgAlt}
-          mainText={mainText}
-          links={links}
-        />
-      </Content>
-    </Layout>
+    <>
+      <Head>
+        <title>{title}</title>
+      </Head>
+      <Layout>
+        <Content>
+          <Project
+            title={title}
+            tags={tags}
+            date={date}
+            location={location}
+            imgSrc={imgSrc}
+            imgAlt={imgAlt}
+            mainText={mainText}
+            links={links}
+          />
+        </Content>
+      </Layout>
+    </>
   );
 };
 
