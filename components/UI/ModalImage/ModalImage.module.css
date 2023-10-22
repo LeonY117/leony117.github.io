@@ -18,7 +18,7 @@
 .Image:hover {
   box-shadow: 0.5em 0.5em 1.5rem rgba(0, 0, 0, 0.05);
   /* set animation for smooth transition */
-  transition: all 0.3s ease-out;
+  transition: all 0.25s ease-out;
 }
 
 .ModalImageWrapper {
