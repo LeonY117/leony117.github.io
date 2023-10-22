@@ -69,8 +69,6 @@ const Project = (props) => {
             priority={true}
             src={imgSrc}
             alt={imgAlt}
-            layout='fill'
-            objectFit='contain'
             caption={caption ? caption : null}
           />
         </div>
