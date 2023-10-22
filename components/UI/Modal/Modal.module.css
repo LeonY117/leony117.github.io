@@ -1,0 +1,17 @@
+.Background {
+  color: black;
+  opacity: 0.2;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+.ModalContent {
+  max-width: 50rem;
+  padding: 2rem;
+  margin: auto;
+  display: flex;
+  height: 100vh;
+  z-index: 101;
+}
