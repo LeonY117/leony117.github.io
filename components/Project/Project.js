@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import ModalImage from '@/components/UI/ModalImage/ModalImage';
 import Tag from '@/components/UI/Tag/Tag';
 
 import classes from './Project.module.css';
@@ -29,16 +30,17 @@ const Project = (props) => {
   const links = props.links; // <div> element
   const imgSrc = props.imgSrc; //string
   const imgAlt = props.imgAlt; //string
+  const caption = props.caption; //string
 
   let tagsList = null;
   if (tags) {
-    tagsList = tags.map((tag) => {
+    tagsList = tags.map((tag, i) => {
       let color = '#F5F5F5';
       if (tag.toLowerCase() in tag_colors) {
         color = tag_colors[tag.toLowerCase()];
       }
       return (
-        <li className={classes.Tag}>
+        <li className={classes.Tag} key={i}>
           <Tag key={tag} color={color}>
             {tag}
           </Tag>
@@ -63,7 +65,14 @@ const Project = (props) => {
     <div className={classes.MainBody}>
       <div className={classes.ImageLinkWrapper}>
         <div className={classes.ImageWrapper}>
-          <Image src={imgSrc} alt={imgAlt} layout='fill' objectFit='contain' />
+          <ModalImage
+            priority={true}
+            src={imgSrc}
+            alt={imgAlt}
+            layout='fill'
+            objectFit='contain'
+            caption={caption ? caption : null}
+          />
         </div>
         <div className={classes.Links}>{links}</div>
       </div>
