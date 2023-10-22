@@ -1,7 +1,7 @@
 .LinkWrapper {
   display: flex;
   flex-direction: row;
-  align-items: start;
+  justify-items: start;
 }
 
 .Emoji {
