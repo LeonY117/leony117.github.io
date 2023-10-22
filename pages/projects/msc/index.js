@@ -27,6 +27,9 @@ const Index = () => {
   const imgAlt =
     'bayesian neural network architecture diagram and sample outputs';
 
+  const caption =
+    'Top: Diagram illustrating an encoder-decoder network with stochastic depth, and we sample short networks at test time; Bottom: Correlation matrix between emotions labels from different tasks, learned by the network from training';
+
   const mainText = (
     <>
       <p>
@@ -86,6 +89,7 @@ const Index = () => {
             location={location}
             imgSrc={imgSrc}
             imgAlt={imgAlt}
+            caption={caption}
             mainText={mainText}
             links={links}
           />

@@ -25,6 +25,9 @@ const Index = () => {
   const imgSrc = '/images/projects/namo.jpg';
   const imgAlt = 'Custom neural network architecture and screenshot demos';
 
+  const caption =
+    'Top: Multimodal network architecture used for function approximation, Bottom: Example trajectory performed by robot, in simulated environments in Isaac Gym';
+
   const mainText = (
     <>
       <p>
@@ -86,6 +89,7 @@ const Index = () => {
             location={location}
             imgSrc={imgSrc}
             imgAlt={imgAlt}
+            caption={caption}
             mainText={mainText}
             links={links}
           />

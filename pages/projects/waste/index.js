@@ -21,6 +21,9 @@ const Index = () => {
   const imgSrc = '/images/projects/waste.jpg';
   const imgAlt = 'Example detection result';
 
+  const caption =
+    "Example detection outputs of the network (note that actual data are on-site images that I'm not allowed to show";
+
   const mainText = (
     <>
       <p>
@@ -65,6 +68,7 @@ const Index = () => {
             location={location}
             imgSrc={imgSrc}
             imgAlt={imgAlt}
+            caption={caption}
             mainText={mainText}
             links={links}
           />

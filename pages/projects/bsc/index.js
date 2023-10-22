@@ -25,6 +25,9 @@ const Index = () => {
   const imgSrc = '/images/projects/bsc.jpg';
   const imgAlt = 'Network architecture diagram';
 
+  const caption =
+    'Top: Encoder-decoder network architecture that uses MobileNetV2 as the backbone; Bottom: Breakdown of a decoder block, using dropout layers and skip connections';
+
   const mainText = (
     <>
       <p>
@@ -84,6 +87,7 @@ const Index = () => {
             location={location}
             imgSrc={imgSrc}
             imgAlt={imgAlt}
+            caption={caption}
             mainText={mainText}
             links={links}
           />

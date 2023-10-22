@@ -21,6 +21,9 @@ const Index = () => {
   const imgSrc = '/images/projects/emotion.jpg';
   const imgAlt = 'Network architecture diagram and emotion correlation graph';
 
+  const caption =
+    "Top: Architecture of the multitask network, and the three tasks' loss function; Bottom: Correlation matrix between emotions labels from different tasks, learned by the network from training";
+
   const mainText = (
     <>
       <p>
@@ -91,6 +94,7 @@ const Index = () => {
             location={location}
             imgSrc={imgSrc}
             imgAlt={imgAlt}
+            caption={caption}
             mainText={mainText}
             links={links}
           />
