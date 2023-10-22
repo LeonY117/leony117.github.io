@@ -1,0 +1,48 @@
+.Modal {
+  transition: all 0.3s ease-out;
+}
+
+.ImageWrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.Image {
+  padding: 0.5em;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 0.5em;
+  transition: all 0.3s ease-out;
+}
+
+.Image:hover {
+  box-shadow: 0.5em 0.5em 1.5rem rgba(0, 0, 0, 0.05);
+  /* set animation for smooth transition */
+  transition: all 0.3s ease-out;
+}
+
+.ModalImageWrapper {
+  width: 100%;
+  background: white;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+}
+
+.ModalImage {
+  width: 100%;
+  max-width: 50rem;
+  height: 100%;
+}
+
+.caption {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 45rem) {
+  .ModalImageWrapper {
+    padding: 1rem;
+  }
+}
